@@ -1,0 +1,204 @@
+.t4-confg h1,
+.t4-confg h2,
+.t4-confg h3,
+.t4-confg h4,
+.t4-confg h5,
+.t4-confg h6,
+.t4-confg p,
+.t4-confg a {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 1.2em !important;
+    letter-spacing: -0.03em;
+    font-size: unset;
+    color: unset;
+    font-weight: unset;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.t4MaxWidth {
+    max-width: 1320px;
+}
+
+@media (max-width: 1400px) {
+    .t4MaxWidth {
+        max-width: 94%;
+    }
+}
+
+.t4-confg img {
+    max-width: 100%;
+}
+
+.t4-confg-image-desk {
+    display: flex;
+}
+
+.t4-confg-image-mob {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .t4-confg-image-desk {
+        display: none;
+    }
+
+    .t4-confg-image-mob {
+        display: flex;
+    }
+}
+
+.t4-confg * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: unset;
+    min-width: unset;
+}
+
+body {
+    background-size: 200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --infinityValue: 999999px;
+    --standardBorderRadius: 20px;
+    --verdeiPlace: #c8d400;
+    --backgroundColor: #ccc;
+
+    --t4StoryWidth: 100%;
+    --t4StoryHeight: 100%;
+
+    --gapPai: 20px;
+    --gapPartBody1: var(--gapPai);
+    --numeroItens1: 3;
+    --subtractGap1: calc(calc(var(--gapPartBody1) * calc(var(--numeroItens1) - 1)) / var(--numeroItens1));
+    --sizeItens1: calc(calc(100% / var(--numeroItens1)) - var(--subtractGap1));
+}
+
+.t4-confg {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#caixa {
+    width: 100%;
+    max-width: 350px;
+    background: var(--backgroundColor);
+    border: solid 2px var(--backgroundColor);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    position: fixed;
+    top: 45%;
+    left: calc(50% - 175px);
+    font-size: 24px;
+    transition: .1s;
+    text-align: center;
+    z-index: 50;
+}
+
+@media (max-width: 500px) {
+    #caixa {
+        max-width: 250px;
+    }
+}
+
+.texto,
+#caixa2 p {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa button {
+    width: calc(50% - 1.5px);
+    padding: 15px;
+    background: #fff;
+    border: none;
+    transition: .5s;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#caixa button:first-of-type {
+    color: #0035e2;
+}
+
+#caixa button:hover {
+    background: #fff;
+}
+
+#tinhu {
+    width: 300px;
+    max-width: 1320px;
+    position: fixed;
+    top: 5vh;
+    display: flex;
+    opacity: 1;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+#caixa2 {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    border: solid 2px var(--backgroundColor);
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 36%;
+    left: calc(50% - 175px);
+    font-size: 24px;
+    transition: 1s;
+    text-align: center;
+    z-index: 51;
+}
+
+#caixa2 p {
+    background-color: #fff;
+    border-bottom: solid 2px #eee;
+}
+
+#caixa2 button {
+    width: 100%;
+    padding: 20px 10px;
+    background: #fff;
+    border: none;
+    border-bottom: solid 2px #eee;
+    transition: .5s;
+    font-size: 24px;
+    cursor: pointer;
+    color: #0035e2;
+    font-size: 20px;
+}
+
+#caixa2 button:hover {
+    background: #f5f5f5;
+    color: #001f85;
+}

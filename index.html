@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Dani</title>
+
+    <link rel="stylesheet" href="talys.css">
+    <script src="talys.js" defer></script>
+</head>
+
+<body style="margin: 0; height: 90vh; background-color: #202020;">
+
+    <div class="t4-confg">
+
+        <div id="caixa">
+            <div class="texto">
+                <p>oi, Dani, gostaria de sair comigo?</p>
+            </div>
+
+            <button onclick="aceitou()">
+                Sim
+            </button>
+            <button onmouseover="reposicionar()" onclick="reposicionar()">
+                Não
+            </button>
+        </div>
+
+        <div id="caixa2">
+            <p>Agora que aceitou, gosta de algum desses lugares?</p>
+
+            <button onclick="aceitouEscolheu('deck')">
+                Deck 117
+            </button>
+            <button onclick="aceitouEscolheu('rothen')">
+                Rothenburg 
+            </button>
+            <button onclick="aceitouEscolheu('outro')">
+                Tenho outra ideia
+            </button>
+        </div>
+
+        <img id="tinhu" src="images/nivel-0.jpg">
+
+    </div>
+
+</body>
+
+</html>
